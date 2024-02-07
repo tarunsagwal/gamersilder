@@ -6,7 +6,32 @@ div.setAttribute("onload","loader()");
 let cricle=document.createElement("div");
 div.appendChild(cricle)
 cricle.setAttribute("class","cricle");
+let type=document.createElement("p");
+div.appendChild(type);
+type.setAttribute("class","type");
+// type.innerText="hello"
 // cricle.setAttribute("class","cricle");
+var app = document.querySelector(".type");
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+//   .pauseFor(250)
+  .typeString('welcome back')
+  .pauseFor(300)
+  .deleteChars(4)
+  .typeString('<strong>suko game</strong>')
+  .pauseFor(2500)
+  .deleteChars(4)
+  .typeString('give you anthor world')
+  .pauseFor(200)
+  .deleteChars(26)
+  .typeString('more fun')
+  .pauseFor(1000)
+  .start();
 console.log(div)
 function transfrom(){
     let home=document.querySelector(".home");
@@ -39,9 +64,11 @@ window.addEventListener("load", (event) => {
         let divi=document.querySelector(".loader")
         divi.classList.remove("loader")
         cricle.classList.remove("cricle")
+        type.classList.remove("type")
         if(timer<1){
             divi.classList.add("loaders")
-            cricle.classList.add("cricle")
+            cricle.classList.add("cricles")
+            type.classList.add("types")
         }
     },5000)
     console.log(timer);
