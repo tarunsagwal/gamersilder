@@ -225,3 +225,37 @@ font-weight: lighter;
     }
 }
 @media (max-width:375px) {.take_name{display: none;}}
+.think{
+    
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 100;
+    top: -50px;
+}
+.cricle{
+    /* background-color: blue; */
+    height: 5rem;
+    width: 5rem;
+    /* margin: 50%; */
+    border-top: 4px solid #b1a7a7;
+    border-bottom: 4px solid #b1a7a7;
+    border-left: 4px solid #321cc1;
+    border-right: 4px solid #b1a7a7;
+    border-radius: 50%;
+    animation: rotate 5s infinite ease-in-out;
+}
+@keyframes rotate {
+    0%{transform: rotate(20deg);}
+    20%{transform: rotate(60deg);}
+    40%{transform: rotate(80deg);}
+    60%{transform: rotate(100deg);}
+    80%{transform: rotate(150deg);}
+    100%{transform: rotate(360deg);}
+}

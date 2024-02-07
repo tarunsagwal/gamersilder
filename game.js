@@ -1,3 +1,22 @@
+let body=document.querySelector("body");
+let div=document.createElement("div");
+body.appendChild(div)
+div.setAttribute("class","loader");
+div.setAttribute("onload","loader()");
+let cricle=document.createElement("div");
+div.appendChild(cricle)
+cricle.setAttribute("class","cricle");
+cricle.setAttribute("class","cricle");
+console.log(div)
+loader=()=>{
+   let timer= setInterval(()=>{
+    let divi=document.querySelector(".loader")
+    divi.Style.display="flex"
+   },5000)
+};
+console.log(loader())
+   loader=()=>{ 
+       clearInterval(timer)}
 function transfrom(){
     let home=document.querySelector(".home");
     home.classList.add("tapchange");
@@ -24,6 +43,4 @@ function nontrans(){
 home.classList.remove("tapchange")
 
 }
-let count=0;
-let container = document.querySelectorAll('.game_container');
-let text = document.querySelectorAll('.game_detale');
+
