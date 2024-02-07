@@ -6,17 +6,8 @@ div.setAttribute("onload","loader()");
 let cricle=document.createElement("div");
 div.appendChild(cricle)
 cricle.setAttribute("class","cricle");
-cricle.setAttribute("class","cricle");
+// cricle.setAttribute("class","cricle");
 console.log(div)
-loader=()=>{
-   let timer= setInterval(()=>{
-    let divi=document.querySelector(".loader")
-    divi.Style.display="flex"
-   },5000)
-};
-console.log(loader())
-   loader=()=>{ 
-       clearInterval(timer)}
 function transfrom(){
     let home=document.querySelector(".home");
     home.classList.add("tapchange");
@@ -43,4 +34,17 @@ function nontrans(){
 home.classList.remove("tapchange")
 
 }
+window.addEventListener("load", (event) => {
+    timer= setInterval(()=>{
+        let divi=document.querySelector(".loader")
+        divi.classList.remove("loader")
+        cricle.classList.remove("cricle")
+        if(timer<1){
+            divi.classList.add("loaders")
+            cricle.classList.add("cricle")
+        }
+    },5000)
+    console.log(timer);
 
+  });
+  
