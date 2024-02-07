@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+body,html{
+    overflow: hidden;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 2rem;
+    padding: 0rem 2rem 0rem 1rem;
+}
+.suko{
+    font-size: 2rem;
+    font-weight: 1000;
+}
+nav{
+display: flex;
+align-items: center;
+height: 3rem;
+padding: 0rem 0rem 0rem 0rem;
+    font-weight: lighter;
+    /* gap: 2rem; */
+    overflow: hidden;
+}
+.home,.about,.services,.contact{
+    width: 7rem;
+    height: 4.5rem;
+display: flex;
+gap: 3rem;
+margin-left: 1rem;
+padding: 2rem 0 0 0;
+transition: .9s;
+flex-direction: column;
+font-size: 1.5rem;
+}
+.tapchange{
+    transform: translateY(-80px);
+    /* font-weight: bold; */
+}
+
+.game_container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -3;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.game_container img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.game_container .game_detale{
+    font-size: 5rem;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+.change_color{ color: aqua;}
+.game_world{
+    overflow: hidden;
+}
+.bxs-sun:hover{
+    animation: sun .7s alternate linear;
+}
+@keyframes sun {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(180deg);}
+}
+@media (max-width:1024px) {
+    .game_detale{
+        padding: 0rem 0rem 0rem 3rem;
+        font-size: 4rem;
+    }
+}
+p{
+    width: 40%;
+font-size: 1.5rem;
+text-transform: lowercase;
+color: rgba(252, 249, 249, 0.658);
+font-weight: lighter;
+}
+.take_name{
+    font-size: x-large;
+    display: flex;
+    width: 12rem;
+    height: auto;
+    /* overflow: hidden; */
+    align-items: center;
+    /* text-decoration: underline; */
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+.take_name a{
+    position: relative;
+}
+
+.take_name a:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    border-radius: 1rem;
+    height: 3px;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    transition: 0.5s;
+    transform-origin: bottom right;
+}
+
+.take_name:hover a::after{
+    transform: scaleX(0);
+}
+
+.hidden_arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.hidden_arrow::after{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: #fff;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.take_name:hover .hidden_arrow::after,
+.take_name:hover .hidden_arrow{
+    transform: scale(3);
+    border: none;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.hidden_arrow i{
+    transform: translateX(-100%);
+    transition: 0.5s;
+    /* background: #fff; */
+}
+
+.take_name:hover i{
+    transform: translateX(0) scale(0.3);
+
+}
+
+.arrow{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    justify-content: space-between;
+    padding: 2rem 3rem 0rem 0rem;
+}
+.requrid{
+    display: flex;
+    font-size: 1rem;
+    gap: 1.5rem;
+    font-weight: lighter;
+    align-items: center; 
+}
+.line{
+    width: 20rem;
+    height: .4rem;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+.bx-left-arrow-alt,
+.bx-right-arrow-alt:nth-of-type(2){
+    background-color: #4e47477b;
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+#menu{ visibility: hidden;}
+.bx-left-arrow-alt:hover{background-color: #ebe7e77b;}
+.bx-right-arrow-alt:nth-of-type(2):hover{background-color: #ebe7e77b;}
+@media (max-width:770px) {
+    nav{display: none;}
+    #menu{ visibility: visible; }
+    .game_detale{
+        padding: 2rem 0rem 0rem 0rem;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p{ width: 70%; }
+    .arrow{ padding: 1rem 0rem 0rem 0rem; }
+}
+@media (max-width:560px) {
+    .requrid{ display: none; }
+    .arrow{
+        gap: 13rem;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:375px) {.take_name{display: none;}}
