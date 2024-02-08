@@ -36,9 +36,18 @@
                 <i class='bx bxs-sun' id="sun" style='color:#eae6e6' onclick="change()" ></i>
                 <i class='bx bx-menu' id="menu"></i>
                 <i class='bx bxs-moon' id="moon" style='color:#eae6e6' onclick="one()" ></i>
+                <i class='bx bx-user-circle' id="profile" onclick="profile()"></i>
             </div>
         </div>
     </header>
+    <div class="profile_box">
+        <i class='bx bxs-user-circle' id="user" style='color:#f4f0f0' ></i>
+       <div class="form"> <h1 class="user_name">enter name :-</h1>
+        <input type="text" class="enter_name"placeholder="Name" required>
+        <h1 class="user_email">enter email :-</h1>
+        <input type="text" class="enter_email" placeholder="Email" required>
+       </div> <button onclick="submit()"><a href="#">submit</a></button>
+    </div>
     <section>
         <div class="game_container">
             <img src="imges/amaging.jpg" class="back_img">

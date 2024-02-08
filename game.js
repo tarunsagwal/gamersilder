@@ -84,7 +84,16 @@ one=()=>{
     sun.style.transform="scale(1)"
     moon.style.transform="scale(0)"
 }
-
+let profiles=document.querySelector("#profile");
+let profilebox=document.querySelector(".profile_box");
+let profile=()=>{
+    profilebox.classList.toggle("profile_boxs")
+}
+let name=document.querySelector(parseInt(".enter_name"));
+let submit=()=>{
+    alert(name+"Successfully submitted your responses thank you");
+}
+// profilebox.style.transform="translateX(0px)"
 
 // let moon=document.createElement("i");
 // icon.appendChild(moon);
