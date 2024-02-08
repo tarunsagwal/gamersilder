@@ -23,7 +23,7 @@ typewriter
   .typeString('welcome back')
   .pauseFor(300)
   .deleteChars(4)
-  .typeString('<strong>suko game</strong>')
+  .typeString('<strong><span style="color:red">suko game</span></strong>')
   .pauseFor(2500)
   .deleteChars(4)
   .typeString('give you anthor world')
@@ -64,7 +64,8 @@ window.addEventListener("load", (event) => {
         let divi=document.querySelector(".loader")
         divi.classList.remove("loader")
         cricle.classList.remove("cricle")
-        type.classList.remove("type")
+        type.classList.remove("type");
+        type.remove();
         if(timer<1){
             divi.classList.add("loaders")
             cricle.classList.add("cricles")

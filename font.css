@@ -241,29 +241,64 @@ font-weight: lighter;
     color: aqua;
     padding-left: 10rem;
 }
-.cricle{
-    /* background-color: blue; */
-    height: 5rem;
-    width: 5rem;
-    /* margin: 50%; */
-    border-left: 4px solid #fcf4f462;
-    border-bottom: 4px solid #fcf4f462;
-    border-top: 4px solid #321cc1;
-    border-right: 4px solid #fcf4f462;
+.cricle {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
     border-radius: 50%;
-    animation: rotate 5s infinite ease-in-out;
-}
-@keyframes rotate {
-    0%{transform: rotate(20deg);}
-    20%{transform: rotate(80deg);}
-    40%{transform: rotate(120deg);}
-    60%{transform: rotate(140deg);}
-    80%{transform: rotate(200deg);}
-    85%{transform: rotate(240deg);}
-    94%{transform: rotate(280deg); 
-        border-top: 4px solid #321cc1;
-        border-right: 4px solid #321cc1;}
-    100%{transform: rotate(360deg);
-        border-top: 4px solid #321cc1;
-        border-right: 4px solid #321cc1;}
-}
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+    
