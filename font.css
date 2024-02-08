@@ -77,10 +77,20 @@ font-size: 1.5rem;
 .bxs-sun:hover{
     animation: sun .7s alternate linear;
 }
+#sun{
+    transition: .5s;
+}
 @keyframes sun {
     0%{transform: rotate(0deg);}
-    50%{transform: rotate(180deg);}
+    /* 50%{transform: rotate(180deg);} */
     100%{transform: rotate(180deg);}
+}
+.bxs-moon{
+    position: absolute;
+    top: 7px;
+    right: 73px;
+    transform: scale(0);
+    transition: .5s;
 }
 @media (max-width:1024px) {
     .game_detale{
@@ -92,7 +102,7 @@ p{
     width: 40%;
 font-size: 1.5rem;
 text-transform: lowercase;
-color: rgba(252, 249, 249, 0.658);
+/* color: rgba(252, 249, 249, 0.658); */
 font-weight: lighter;
 }
 .take_name{

@@ -9,8 +9,6 @@ cricle.setAttribute("class","cricle");
 let type=document.createElement("p");
 div.appendChild(type);
 type.setAttribute("class","type");
-// type.innerText="hello"
-// cricle.setAttribute("class","cricle");
 var app = document.querySelector(".type");
 
 var typewriter = new Typewriter(app, {
@@ -75,4 +73,20 @@ window.addEventListener("load", (event) => {
     console.log(timer);
 
   });
-  
+let icon=document.querySelector(".icon");
+let sun=document.querySelector("#sun");
+let moon=document.querySelector("#moon");
+let change=()=>{
+    sun.style.transform="scale(.0)"
+    moon.style.transform="scale(1)"
+}
+one=()=>{
+    sun.style.transform="scale(1)"
+    moon.style.transform="scale(0)"
+}
+
+
+// let moon=document.createElement("i");
+// icon.appendChild(moon);
+// moon.setAttribute("class","bx bxs-moon");
+// moon.setAttribute("style","color:#eae6e6");
