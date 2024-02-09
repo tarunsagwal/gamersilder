@@ -93,10 +93,16 @@ let submit=()=>{
     const name= document.querySelector('.enter_name');
     let mail = document.querySelector('.enter_email');
     let val = name.value;
-    if(val!=""){
-        alert(val+"Successfully submitted your responses thank you");
+    let email = mail.value;
+    if(val!="" ){
+        if(email!="" && val!="" ){
+            alert(val+"Successfully email your responses thank you");
+        }else{
+            alert('Plz enter email a form ');
+        }
     }else{
-        alert('Plzz 😭😭😭 fill a form ');
+    alert('Plz enter name a form ');
+
     }
 }
 // profilebox.style.transform="translateX(0px)"
