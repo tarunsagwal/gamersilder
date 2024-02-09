@@ -88,7 +88,7 @@ font-size: 1.5rem;
 .bxs-moon{
     position: absolute;
     top: 7px;
-    right: 73px;
+    right: 114px;
     transform: scale(0);
     transition: .5s;
 }

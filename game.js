@@ -89,9 +89,15 @@ let profilebox=document.querySelector(".profile_box");
 let profile=()=>{
     profilebox.classList.toggle("profile_boxs")
 }
-let name=document.querySelector(parseInt(".enter_name"));
 let submit=()=>{
-    alert(name+"Successfully submitted your responses thank you");
+    const name= document.querySelector('.enter_name');
+    let mail = document.querySelector('.enter_email');
+    let val = name.value;
+    if(val!=""){
+        alert(val+"Successfully submitted your responses thank you");
+    }else{
+        alert('Plzz 😭😭😭 fill a form ');
+    }
 }
 // profilebox.style.transform="translateX(0px)"
 
