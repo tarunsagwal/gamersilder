@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: rgb(41, 42, 42);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body,html{  overflow-X: hidden;
+background-color: #fff;
+scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 1rem;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: #c9c7c7;
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5rem;
+    grid-auto-rows: 300px  ;
+    padding: 10px;
+}
+.info a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0rem 13rem;
+    color: cyan;
+    text-decoration: underline;
+}
+.info{
+    display: flex;
+    /* background-color:#b5b3b3; */
+    /* padding: 1rem 0rem;  */
+    flex-direction: column-reverse;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+/* .card_first{
+    border: 1px solid #000;
+} */
+.game_id{transform: translateY(-110px);
+transition: 1s;}
+.color img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: scale(1);
+    border-radius: 1rem;
+}
+.info:hover img{ transform: scale(1.2);}
+.info:hover .game_id{
+    transform: translateY(0px);
+}
+.color{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 1rem;
+    /* border-top-right-radius: 1rem; */
+    overflow: hidden;
+    height: 15rem;
+}
+.more_game{
+    padding: 3rem 33.5rem;
+    display: flex;
+    align-items: center;
+}
+.more_game .bx{
+    font-size: 4rem;
+    border: 3px solid #c9c7c7;
+    border-radius: 2rem;
+}
+#arrow:hover{
+    background-color: #727070;
+    border: none;
+}
+.footer_container{
+    background-color:#000;
+    width: 100%;
+    height: 19rem;
+}
+.footer_container .container{
+    background-color: #fff;
+    height: 1.5rem;
+    margin-left:26.5rem;
+    border-radius: .2rem;
+    width: 20rem;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem ;
+}
+ul{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.footer_container .second{
+    padding: 2rem 0rem ;
+}
+.details_icon{
+    font-size: 3rem;
+}
+.brand{
+    position: absolute;
+    margin-left: 62rem;
+    margin-top: 5rem;
+    font-size: 8rem;
+}
+/* ........................................... */
+.head{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 2rem;
+    padding: 0rem 2rem 0rem 1rem;
+}
+.suko{
+    font-size: 2rem;
+    font-weight: 1000;
+}
+nav{
+display: flex;
+align-items: center;
+height: 3rem;
+padding: 0rem 0rem 0rem 0rem;
+    font-weight: lighter;
+    /* gap: 2rem; */
+    overflow: hidden;
+}
+.home,.about,.services,.contact{
+    width: 7rem;
+    height: 4.5rem;
+display: flex;
+gap: 3rem;
+margin-left: 1rem;
+padding: 2rem 0 0 0;
+transition: .9s;
+flex-direction: column;
+font-size: 1.5rem;
+}
+.tapchange{
+    transform: translateY(-80px);
+    /* font-weight: bold; */
+}
+.bxs-sun:hover{
+    animation: sun .7s alternate linear;
+}
+#sun{
+    transition: .5s;
+}
+@keyframes sun {
+    0%{transform: rotate(0deg);}
+    /* 50%{transform: rotate(180deg);} */
+    100%{transform: rotate(180deg);}
+}
+.bxs-moon{
+    position: absolute;
+    top: 7px;
+    right: 114px;
+    transform: scale(0);
+    transition: .5s;
+}
+.profile_box{
+    position: absolute;
+    background-color: #dbd9d9c3;
+    height: 19rem;
+    width: 14rem;
+    /* gap: 2rem; */
+    transform: translateX(251px);
+    transition: 2s;
+    border-radius: 2rem;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile_boxs{
+    position: absolute;
+    background-color: #dbd9d9c3;
+    height: 19rem;
+    width: 14rem;
+    /* gap: 2rem; */
+    transform: translateX(0px);
+    transition: 2s;
+    border-radius: 2rem;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#user{
+    font-size: 6rem;
+}
+.form h1{
+    color: #756f6f;
+    font-size: 1rem;
+    margin-left: -12px;
+    margin-top: 1rem;
+}
+.form input{
+    border-radius: 1rem;
+    color: #000;
+    background-color: #ffffffdf;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem;
+}
+input:hover{
+    box-shadow: 0px 0px 10px #b0afafb2;
+}
+.profile_box button{
+    padding: .5rem 1.5rem;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    background-color:transparent;
+    border: 2px solid #363fe8;
+}
+button:hover a{color: azure; font-weight: bolder;}
+button:hover{
+    background-color: #363fe8;
+}
