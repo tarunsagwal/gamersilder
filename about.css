@@ -111,6 +111,9 @@ ul{
     margin-top: 5rem;
     font-size: 8rem;
 }
+.bx:hover{
+    transform: scale(1.2);
+}
 /* ........................................... */
 .head{
     display: flex;
