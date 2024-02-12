@@ -10,6 +10,7 @@
 body,html{  overflow-X: hidden;
 background-color: #fff;
 scroll-behavior: smooth;
+background-color: #1b1b1b;
 }
 body::-webkit-scrollbar{
     width: 1rem;
@@ -28,7 +29,7 @@ body::-webkit-scrollbar-thumb{
 .info a{
     font-size: 1.5rem;
     font-weight: bolder;
-    padding: 0rem 13rem;
+    /* padding: 0rem 13rem; */
     color: cyan;
     text-decoration: underline;
 }

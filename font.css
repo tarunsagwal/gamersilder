@@ -25,25 +25,30 @@ body,html{
 nav{
 display: flex;
 align-items: center;
+justify-content: flex-start;
 height: 3rem;
-padding: 0rem 0rem 0rem 0rem;
+width: 38rem;
+/* background-color: #fff; */
+/* width: auto; */
     font-weight: lighter;
     /* gap: 2rem; */
     overflow: hidden;
 }
 .home,.about,.services,.contact{
-    width: 7rem;
+    width: 40rem;
     height: 4.5rem;
 display: flex;
-gap: 3rem;
-margin-left: 1rem;
-padding: 2rem 0 0 0;
+/* background-color:#000; */
+gap: 1rem;
+margin-left: .5rem;
+padding: 1rem 0 0 0;
 transition: .9s;
+font-weight: bolder;
 flex-direction: column;
 font-size: 1.5rem;
 }
 .tapchange{
-    transform: translateY(-80px);
+    transform: translateY(-45px);
     /* font-weight: bold; */
 }
 
