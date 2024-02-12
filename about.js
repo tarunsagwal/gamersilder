@@ -56,3 +56,17 @@ function nontrans(){
 home.classList.remove("tapchange")
 
 }
+window.addEventListener("load", (event) => {
+    timer= setInterval(()=>{
+        let divi=document.querySelector(".loader")
+        let div=document.querySelector(".page")
+        divi.classList.remove("loader")
+        div.classList.remove("page")
+        type.remove();
+        if(timer<1){
+            divi.classList.add("loaders")
+            div.classList.add("cricles")
+        }
+    },3500)
+    console.log(timer);
+});
