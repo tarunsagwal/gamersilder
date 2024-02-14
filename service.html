@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gaming_side</title>
+    <link rel="icon" href="imges/spring-boot-logo-24.png">
     <link rel="stylesheet" href="service.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -31,9 +32,9 @@
                 </div>
             </nav>
             <div class="icon">
-                <i class='bx bxs-sun' id="sun" onclick="change()" style="color: antiquewhite;" ></i>
+                <i class='bx bxs-sun' id="sun" onclick="one()" style="color: rgb(237, 161, 61);" ></i>
                 <i class='bx bx-menu' id="menu"></i>
-                <i class='bx bxs-moon' id="moon" onclick="one()" ></i>
+                <i class='bx bxs-moon' id="moon" onclick="change()" ></i>
                 <i class='bx bx-user-circle' id="profile" onclick="profile()"></i>
             </div>
         </div>
@@ -42,22 +43,43 @@
         <div class="service">
             <div class="service_tap">
                 <img src="imges/girl.jpg">
+                <div class="dark"></div>
                 <div class="program">
                 <h1>service</h1>
                 <p>Distinctively revolutionize<br> unique deliverables. </p>
                </div>
                 <div class="box">
                     <div class="grid_box">
-                        <div class="grid_container"></div>
-                        <div class="grid_container"></div>
-                        <div class="grid_container"></div>
-                        <div class="grid_container"></div>
-                        <div class="grid_container"></div>
+                        <div class="grid_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M12 17.3334C11.12 17.7734 10.3867 18.4267 9.83999 19.24C9.53332 19.7067 9.53332 20.2934 9.83999 20.76C10.3867 21.5734 11.12 22.2267 12 22.6667" stroke="#5353EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.28 17.3334C21.16 17.7734 21.8934 18.4267 22.44 19.24C22.7467 19.7067 22.7467 20.2934 22.44 20.76C21.8934 21.5734 21.16 22.2267 20.28 22.6667" stroke="#5353EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 29.3333H20C26.6666 29.3333 29.3333 26.6666 29.3333 20V12C29.3333 5.33329 26.6666 2.66663 20 2.66663H12C5.33329 2.66663 2.66663 5.33329 2.66663 12V20C2.66663 26.6666 5.33329 29.3333 12 29.3333Z" stroke="#5353EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.97327 10.68L28.5999 10.6666" stroke="#5353EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <h1>Search Engine Optimization (SEO)</h1>
+                            <p>Boost your organic visibility and drive targeted traffic with our proven SEO strategies.</p>
+                        </div>
+                        <div class="grid_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M17.3467 3.89326L25.2134 7.38659C27.4801 8.38659 27.4801 10.0399 25.2134 11.0399L17.3467 14.5333C16.4534 14.9333 14.9867 14.9333 14.0934 14.5333L6.22673 11.0399C3.96007 10.0399 3.96007 8.38659 6.22673 7.38659L14.0934 3.89326C14.9867 3.49326 16.4534 3.49326 17.3467 3.89326Z" stroke="#F04037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 14.6666C4 15.7866 4.84 17.08 5.86667 17.5333L14.92 21.56C15.6133 21.8666 16.4 21.8666 17.08 21.56L26.1333 17.5333C27.16 17.08 28 15.7866 28 14.6666" stroke="#F04037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 21.3334C4 22.5734 4.73333 23.6934 5.86667 24.2L14.92 28.2267C15.6133 28.5334 16.4 28.5334 17.08 28.2267L26.1333 24.2C27.2667 23.6934 28 22.5734 28 21.3334" stroke="#F04037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <h1>Pay-Per-Click Advertising (PPC)</h1>
+                            <p>Maximize your ROI with strategic PPC campaigns that get your business noticed.</p>
+                        </div>
+                        <div class="grid_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M12 17.3334C11.12 17.7734 10.3867 18.4267 9.83999 19.24C9.53332 19.7067 9.53332 20.2934 9.83999 20.76C10.3867 21.5734 11.12 22.2267 12 22.6667" stroke="#54D2D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.28 17.3334C21.16 17.7734 21.8934 18.4267 22.44 19.24C22.7467 19.7067 22.7467 20.2934 22.44 20.76C21.8934 21.5734 21.16 22.2267 20.28 22.6667" stroke="#54D2D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 29.3333H20C26.6666 29.3333 29.3333 26.6666 29.3333 20V12C29.3333 5.33329 26.6666 2.66663 20 2.66663H12C5.33329 2.66663 2.66663 5.33329 2.66663 12V20C2.66663 26.6666 5.33329 29.3333 12 29.3333Z" stroke="#54D2D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.97339 10.68L28.6001 10.6666" stroke="#54D2D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <h1>Social Media Marketing</h1>
+                            <p>Engage your audience and build brand loyalty through compelling social media strategies.</p>
+                        </div>
+                        <div class="grid_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M23.2 25.6667H8.8C6.8 25.6667 6 24.8134 6 22.6934V21.3067C6 19.1867 6.8 18.3334 8.8 18.3334H23.2C25.2 18.3334 26 19.1867 26 21.3067V22.6934C26 24.8134 25.2 25.6667 23.2 25.6667Z" stroke="#EF398A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.5333 14.3333H11.4666C9.46663 14.3333 8.66663 13.48 8.66663 11.36V9.97333C8.66663 7.85333 9.46663 7 11.4666 7H20.5333C22.5333 7 23.3333 7.85333 23.3333 9.97333V11.36C23.3333 13.48 22.5333 14.3333 20.5333 14.3333Z" stroke="#EF398A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 29.3333V26.1333" stroke="#EF398A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 17.3333V14.6666" stroke="#EF398A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 2.66663V6.25329" stroke="#EF398A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <h1>Content Marketing</h1>
+                            <p>Tell your brand story with impactful content that resonates with your target audience.</p>
+                        </div>
+                        <div class="grid_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M9.01335 29.3333H22.9867C26.6667 29.3333 28.1334 27.08 28.3067 24.3333L29 13.32C29.1867 10.44 26.8934 7.99996 24 7.99996C23.1867 7.99996 22.44 7.53329 22.0667 6.81329L21.1067 4.87996C20.4934 3.66663 18.8934 2.66663 17.5334 2.66663H14.48C13.1067 2.66663 11.5067 3.66663 10.8934 4.87996L9.93335 6.81329C9.56002 7.53329 8.81335 7.99996 8.00002 7.99996C5.10669 7.99996 2.81335 10.44 3.00002 13.32L3.69335 24.3333C3.85335 27.08 5.33335 29.3333 9.01335 29.3333Z" stroke="#39EFA1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 10.6666H18" stroke="#39EFA1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 24C18.3866 24 20.3333 22.0534 20.3333 19.6667C20.3333 17.28 18.3866 15.3334 16 15.3334C13.6133 15.3334 11.6666 17.28 11.6666 19.6667C11.6666 22.0534 13.6133 24 16 24Z" stroke="#39EFA1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <h1>Web Design and Development</h1>
+                            <p>Create a stunning online presence with user-friendly, responsive websites.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="about.js"></script>
+    <script src="service.js"></script>
 </body>
 </html>

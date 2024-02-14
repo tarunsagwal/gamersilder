@@ -263,3 +263,7 @@ button:hover a{color: azure; font-weight: bolder;}
 button:hover{
     background-color: #363fe8;
 }
+@media (max-width:940px) {
+    nav{display: none;}
+    #menu{ visibility: visible; }
+}
