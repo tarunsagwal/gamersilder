@@ -3,14 +3,14 @@
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-    color: rgb(41, 42, 42);
+    color: #eef2f2;
     text-decoration: none;
     text-transform: capitalize;
 }
 body,html{  overflow-X: hidden;
 background-color: #fff;
 scroll-behavior: smooth;
-background-color: #1b1b1b;
+background-color: #525353;
 }
 body::-webkit-scrollbar{
     width: 1rem;
@@ -85,7 +85,7 @@ transition: 1s;}
     height: 19rem;
 }
 .footer_container .container{
-    background-color: #fff;
+    background-color: #525353;
     height: 1.5rem;
     margin-left:26.5rem;
     border-radius: .2rem;

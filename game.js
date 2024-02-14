@@ -76,13 +76,17 @@ window.addEventListener("load", (event) => {
 let icon=document.querySelector(".icon");
 let sun=document.querySelector("#sun");
 let moon=document.querySelector("#moon");
+let dark = document.getElementsByTagName('link')[1];
 let change=()=>{
     sun.style.transform="scale(.0)"
     moon.style.transform="scale(1)"
+    dark.href = "dark.css";
 }
 one=()=>{
     sun.style.transform="scale(1)"
     moon.style.transform="scale(0)"
+    dark.href = "font.css";
+
 }
 let profiles=document.querySelector("#profile");
 let profilebox=document.querySelector(".profile_box");
