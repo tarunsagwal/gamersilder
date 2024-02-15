@@ -127,7 +127,6 @@ span{font-weight:50;}
     padding-top: 2rem;
     grid-template-columns: repeat(4,250px);
     grid-auto-rows:200px ;
-
     grid-gap: 1rem;
 }
 .grid_pro{
@@ -164,4 +163,43 @@ span{font-weight:50;}
     height: .1rem;
     width: 13rem;
     border-radius: 1rem;
+}
+.partner_section{
+    display: flex;
+    height: 100vh;
+    padding-top: 5rem;
+    justify-content: space-around;
+    background-color: #d0cfcf;
+}
+.partnership h1{
+font-size: 2rem;
+}
+.partnership p{
+    font-weight: 200;
+    padding-top: 1rem;
+}
+.partnership h2{
+    padding-top: 1rem;
+}
+
+input ,textarea{
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    color: rgb(51, 52, 52);
+    border: .8px solid #dad8d5;
+    border-radius: .5rem;
+}
+input:hover{
+    border: .8px solid #ed7936;
+}
+textarea:hover{
+    border: .8px solid #ed7936;
+}
+button{cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background-color: #ed7936;
+    color: rgb(29, 29, 29);
+    border: none;
 }
