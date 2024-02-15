@@ -5,12 +5,12 @@ let dark = document.getElementsByTagName('link')[1];
 
 let change=()=>{
     sun.style.transform="scale(.0)"
-    dark.href = "about_dark.css";
+    dark.href = "about.css";
     moon.style.transform="scale(1)"
 }
 one=()=>{
     sun.style.transform="scale(1)"
-    dark.href = "about.css";
+    dark.href = "about_dark.css";
     moon.style.transform="scale(0)"
 }
 let profiles=document.querySelector("#profile");

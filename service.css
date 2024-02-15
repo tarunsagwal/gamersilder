@@ -18,6 +18,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 1rem;
     background-color: #494848;
 }
+.bx{cursor: pointer;}
 .head{
     display: flex;
     position: fixed;
@@ -74,7 +75,7 @@ font-size: 1.5rem;
 .bxs-moon{
     position: absolute;
     top: 7px;
-    right: 114px;
+    right: 73px;
     transition: .5s;
 }
  img{
@@ -156,6 +157,7 @@ font-size: 1.5rem;
     margin-top: 6.5rem;
     padding: 1rem 3rem;
     font-size: 2rem;
+    cursor: pointer;
     border-radius: 4rem;
     display: flex;
     align-items: center;
@@ -167,7 +169,7 @@ font-size: 1.5rem;
 span{font-weight:50;}
 .bx-right-arrow-alt{
     font-size: 3rem;
-    transition: 1s;
+    transition: .1s;
 
     font-weight: bolder;
 }
@@ -221,4 +223,5 @@ span{font-weight:50;}
     border-radius: 1rem;
     width: 13rem;
 }
+#profile{display: none;}
 

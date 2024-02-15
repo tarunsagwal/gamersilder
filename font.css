@@ -10,7 +10,7 @@ body,html{
     color: aliceblue;
     overflow: hidden;
 }
-
+.bx{cursor: pointer;}
 .head{
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@ font-size: 1.5rem;
     font-size: 5rem;
     position: absolute;
     top: 5rem;
-    left: 5rem;
+    left: 1rem;
 }
 
 .change_color{ color: aqua;}
@@ -168,7 +168,7 @@ button:hover{
     }
 }
 p{
-    width: 40%;
+    width: 80%;
 font-size: 1.5rem;
 text-transform: lowercase;
 /* color: rgba(252, 249, 249, 0.658); */
@@ -255,12 +255,12 @@ font-weight: lighter;
 .arrow{
     width: 100%;
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     display: flex;
     align-items: center;
     font-size: 3rem;
     justify-content: space-between;
-    padding: 2rem 3rem 0rem 0rem;
+    padding: 5rem 3rem 0rem 0rem;
 }
 .requrid{
     display: flex;

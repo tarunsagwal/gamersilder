@@ -17,6 +17,8 @@ body::-webkit-scrollbar-thumb{
     background-color: #a3a2a2;
     border-radius: 1rem;
 }
+.bx{cursor: pointer;}
+#profile{display: none;}
 .head{
     display: flex;
     position: fixed;
@@ -73,7 +75,7 @@ font-size: 1.5rem;
 .bxs-moon{
     position: absolute;
     top: 7px;
-    right: 114px;
+    right: 73px;
     transform: scale(0);
     transition: .5s;
 }

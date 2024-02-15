@@ -19,6 +19,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 1rem;
     background-color: #c9c7c7;
 }
+.bx{cursor: pointer;}
 .card_container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
