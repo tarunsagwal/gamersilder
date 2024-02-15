@@ -110,9 +110,40 @@ let submit=()=>{
 
     }
 }
-// profilebox.style.transform="translateX(0px)"
 
-// let moon=document.createElement("i");
-// icon.appendChild(moon);
-// moon.setAttribute("class","bx bxs-moon");
-// moon.setAttribute("style","color:#eae6e6");
+let a = 0;
+let flag=0;
+function controller(x){
+    flag= flag + x;
+    slideshow(flag);
+    // liner()
+}
+// liner()
+
+slideshow(flag);
+function slideshow(num){
+    let line=document.querySelector(".lines")
+    let slides = document.querySelectorAll(".game_container")
+    if(num == slides.length){
+        flag=0;
+        num=0;
+   
+
+
+    }
+    if(num<0){
+        flag=slides.length-1;
+        num=slides.length-1;
+
+    }
+    
+
+    for(let y of slides){
+        y.style.display="none"
+    }
+    slides[num].style.display="block";
+    a++;
+    line.style.transform = `translateX(${a*33.3}%)`;
+
+}
+ 

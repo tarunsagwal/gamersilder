@@ -60,3 +60,28 @@ function nontrans(){
 home.classList.remove("tapchange")
 
 }
+
+var slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.querySelectorAll(".game_detale");
+  if (n === undefined) {n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 1000); // Change image every 10 seconds
+}
+showSlides()

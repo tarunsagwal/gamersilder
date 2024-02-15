@@ -59,6 +59,7 @@ font-size: 1.5rem;
     width: 100%;
     height: 100vh;
     position: absolute;
+    display: none;
     top: 0;
     z-index: -3;
     overflow: hidden;
@@ -271,8 +272,16 @@ font-weight: lighter;
 .line{
     width: 20rem;
     height: .4rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    background-color: #787676;
+}
+.lines{
+    width: 20rem;
+    height: .4rem;
     border-radius: .5rem;
     background-color: #fff;
+    transform: translateX(100%);
 }
 .bx-left-arrow-alt,
 .bx-right-arrow-alt:nth-of-type(2){
@@ -306,7 +315,7 @@ font-weight: lighter;
 @media (max-width:375px) {.take_name{display: none;}}
 .loader{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     position: relative;
     display: flex;
     align-items: center;

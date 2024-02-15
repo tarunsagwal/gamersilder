@@ -100,13 +100,15 @@
             </div>
     </section>
     <div class="arrow">
-        <i class='bx bx-left-arrow-alt' id="left" style='color:#fff' onclick="left()" ></i>
+        <i class='bx bx-left-arrow-alt' onclick="controller(-1)" id="left" style='color:#fff' onclick="left()" ></i>
         <div class="requrid">
         <h1>01</h1>
-        <div class="line"></div>
+        <div class="line">
+            <div class="lines"></div>
+        </div>
         <h1>03</h1>
     </div>
-    <i class='bx bx-right-arrow-alt' id="right" style='color:#fff' onclick="right()" ></i>
+    <i class='bx bx-right-arrow-alt' id="right" onclick="controller(1)" style='color:#fff' onclick="right()" ></i>
 </div>
 <script src="game.js"></script>
 </body>
