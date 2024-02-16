@@ -17,6 +17,10 @@ body::-webkit-scrollbar-thumb{
     background-color: #a3a2a2;
     border-radius: 1rem;
 }
+iframe{padding-top: 3rem;}
+.partner{
+    background-color: #d0cfcf;
+}
 .bx{cursor: pointer;}
 #profile{display: none;}
 .head{

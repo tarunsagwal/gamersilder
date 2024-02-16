@@ -78,6 +78,11 @@ font-size: 1.5rem;
     right: 73px;
     transition: .5s;
 }
+iframe{padding-top: 5rem;
+}
+.partner{
+    background-color: #272727;
+}
  #profile{display: none;}
  #menu{ visibility: hidden; }
 
