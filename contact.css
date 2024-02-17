@@ -210,3 +210,22 @@ button{cursor: pointer;
     color: aliceblue;
     border: none;
 }
+.img_edit{display: flex;
+    justify-content: center;
+}
+.edit{
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #dedbdb;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 10%;
+    height: 300px;
+}
+.edit img{
+    width: 100%;
+    height: 100%;
+}
+.edit:hover{
+    width: 400px;
+} 

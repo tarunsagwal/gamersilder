@@ -13,6 +13,7 @@ body,html{
 }
 body::-webkit-scrollbar{
     background-color: #000;
+    width: 10px;
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 1rem;
@@ -78,7 +79,7 @@ font-size: 1.5rem;
     right: 73px;
     transition: .5s;
 }
- img{
+.service_tap .anime_2{
     width: 100%;
     position: absolute;
     z-index: -100;
@@ -114,7 +115,7 @@ font-size: 1.5rem;
     display: grid;
     grid-gap: 2rem;
     padding-top: 2rem;
-    padding-left: 17rem;
+    padding-left: 15rem;
     grid-template-columns: repeat(3,320px);
     grid-auto-rows: 200px 200px;
 }
@@ -224,4 +225,26 @@ span{font-weight:50;}
     width: 13rem;
 }
 #profile{display: none;}
+.img_edit{display: flex;
+    justify-content: center;
+}
+.edit{
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 10%;
+    height: 300px;
+}
+.edit img{
+    width: 100%;
+    height: 100%;
+}
+.edit:hover{
+    width: 400px;
+} 
+.service_tap .anime_4{
+    display: none;
+}
 
