@@ -114,7 +114,7 @@ font-size: 1.5rem;
     display: grid;
     grid-gap: 2rem;
     padding-top: 2rem;
-    padding-left: 7rem;
+    padding-left: 17rem;
     grid-template-columns: repeat(3,320px);
     grid-auto-rows: 200px 200px;
 }

@@ -44,7 +44,7 @@ padding: 0rem 0rem 0rem 0rem;
 }
 a{
     color: rgb(219, 212, 212);
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 .home,.about,.services,.contact{
     width: 7rem;
@@ -115,7 +115,7 @@ font-size: 1.5rem;
     display: grid;
     grid-gap: 2rem;
     padding-top: 2rem;
-    padding-left: 7rem;
+    padding-left: 17rem;
     grid-template-columns: repeat(3,320px);
     grid-auto-rows: 200px ;
 }
