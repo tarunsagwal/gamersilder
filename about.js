@@ -74,3 +74,12 @@ window.addEventListener("load", (event) => {
     },3500)
     console.log(timer);
 });
+
+
+document.addEventListener("mousemove", function(event) {
+    var cursor = document.querySelector(".custom-cursor");
+    var cursorIcon = document.querySelector(".cursor-icon");
+    
+    cursor.style.left = (event.clientX - cursorIcon.offsetWidth / 2) + "px";
+    cursor.style.top = (event.clientY - cursorIcon.offsetHeight / 2) + "px";
+});

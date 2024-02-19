@@ -333,7 +333,7 @@ font-weight: lighter;
 .type{
     color: aqua;
     padding-top: -10rem;
-    padding-left: 10rem;
+    padding-left: 33rem;
 }
 .bxl-spring-boot{
 font-size: 5rem;
@@ -347,6 +347,25 @@ transition: 1s;
     /* 50%{transform: translateX(-40px);} */
     100%{transform: translateY(10px);}
     /* 100%{transform: translatex(80px);} */
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+    z-index: 9999;
+}
+
+.cursor-icon {
+    width: 32px; 
+    height: 32px; 
+    background-color: #000; 
+    border-radius: 50%; 
+    opacity: 0.5; 
+}
+body{
+    cursor: none;
 }
 
     

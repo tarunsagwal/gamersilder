@@ -13,7 +13,7 @@ scroll-behavior: smooth;
 background-color: #525353;
 }
 body::-webkit-scrollbar{
-    width: 1rem;
+    width: 10px;
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 1rem;
@@ -22,10 +22,10 @@ body::-webkit-scrollbar-thumb{
 .bx{cursor: pointer;}
 .flip{
     display: grid;
-    gap: 2rem;
     grid-template-columns: repeat(2 ,1fr);
     grid-auto-rows: 400px;
-    margin-top: 2rem;
+    justify-items: center;
+    align-items: center;
 }
 .flip a{
     font-size: 2rem;
@@ -80,8 +80,9 @@ img{
     padding-top: 5rem;
   }
 .more_game{
-    padding: 3rem 33.5rem;
+    padding-bottom: 2rem;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .more_game .bx{
@@ -101,7 +102,7 @@ img{
 .footer_container .container{
     background-color: #525353;
     height: 1.5rem;
-    margin-left:26.5rem;
+    margin-left:32.5rem;
     border-radius: .2rem;
     width: 20rem;
 }
@@ -280,4 +281,22 @@ button:hover{
 @media (max-width:940px) {
     nav{display: none;}
     #menu{ visibility: visible; }
+}
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+    z-index: 9999;
+}
+
+.cursor-icon {
+    width: 32px; 
+    height: 32px; 
+    background-color: #000; 
+    border-radius: 50%; 
+    opacity: 0.5; 
+}
+body{
+    cursor: none;
 }

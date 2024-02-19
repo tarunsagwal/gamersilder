@@ -1,7 +1,4 @@
-let icon=document.querySelector(".icon");
-let sun=document.querySelector("#sun");
-let moon=document.querySelector("#moon");
-let dark = document.getElementsByTagName('link')[1];
+const [icon,sun,moon,dark] = [document.querySelector(".icon"),document.querySelector("#sun"),document.querySelector("#moon"),document.getElementsByTagName('link')[1]]
 
 let change=()=>{
     sun.style.transform="scale(1)"
@@ -39,3 +36,10 @@ function nontrans(){
     contact.classList.remove("tapchange")
     home.classList.remove("tapchange")
 }
+    document.addEventListener("mousemove", function(event) {
+        var cursor = document.querySelector(".custom-cursor");
+        var cursorIcon = document.querySelector(".cursor-icon");
+        
+        cursor.style.left = (event.clientX - cursorIcon.offsetWidth / 2) + "px";
+        cursor.style.top = (event.clientY - cursorIcon.offsetHeight / 2) + "px";
+    });

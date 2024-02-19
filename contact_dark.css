@@ -10,6 +10,9 @@ body,html{
     color: rgb(32, 32, 32);
     overflow-x: hidden;
 }
+body{
+cursor: none;
+}
 body::-webkit-scrollbar{
     width: 10px;
 }
@@ -70,6 +73,7 @@ font-size: 1.5rem;
 }
 #sun{
     transition: .5s;
+    color: #ed7936;
 }
 #menu{visibility: hidden;}
 @keyframes sun {
@@ -207,22 +211,97 @@ button{cursor: pointer;
     color: rgb(29, 29, 29);
     border: none;
 }
-.img_edit{display: flex;
-    justify-content: center;
-}
-.edit{
+.container {
+    perspective: 800px;
     cursor: pointer;
-    background-color: #fff;
-    border: 2px solid #dedbdb;
-    border-radius: 2rem;
-    overflow: hidden;
-    width: 10%;
+    width: 300px;
     height: 300px;
-}
-.edit img{
+    margin-left: 20%;
+    margin-top: 0%;
+    /* margin-bottom: 50%; */
+  }
+  
+  .cube {
     width: 100%;
     height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 5s infinite linear;
+  }
+  
+  .face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+  }
+  
+  .front {
+    transform: translateZ(100px);
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }
+  .face img{
+    width: 100%;
+    height: 100%;
+  }
+  /* #cursor-icon {
+    position: absolute;
+    z-index: 9999;
+    pointer-events: none;
+    display: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  .cricle{
+    background-color: #ffffff84;
+    transform: translate(50%,50%);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    /* transition: transform 0.5s; 
+  } */
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allow clicks to pass through the cursor */
+    z-index: 9999; /* Ensure cursor is above other elements */
 }
-.edit:hover{
-    width: 400px;
-} 
+
+.cursor-icon {
+    width: 32px; /* Adjust the size as needed */
+    height: 32px; /* Adjust the size as needed */
+    background-color: #000; /* Change the background color */
+    border-radius: 50%; /* Make it round */
+    opacity: 0.5; /* Adjust transparency */
+}
