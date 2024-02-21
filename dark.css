@@ -10,7 +10,8 @@ body,html{
     color: #1a1a1a;
     overflow: hidden;
 }
-.bx{cursor: pointer;}
+.bx{cursor: none;}
+a{cursor: none;}
 .head{
     display: flex;
     align-items: center;

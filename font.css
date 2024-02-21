@@ -10,7 +10,8 @@ body,html{
     color: aliceblue;
     overflow: hidden;
 }
-.bx{cursor: pointer;}
+.bx{cursor: none;}
+a{cursor: none;}
 .head{
     display: flex;
     align-items: center;
@@ -274,14 +275,14 @@ font-weight: lighter;
     height: .4rem;
     overflow: hidden;
     border-radius: .5rem;
-    background-color: #787676;
+    background-color: #fff;
 }
 .lines{
     width: 20rem;
     height: .4rem;
     border-radius: .5rem;
-    background-color: #fff;
-    transform: translateX(100%);
+    background-color: #787676;
+    /* transform: translateX(100%); */
 }
 .back_video{
     width: 100%;
@@ -333,7 +334,7 @@ font-weight: lighter;
 .type{
     color: aqua;
     padding-top: -10rem;
-    padding-left: 33rem;
+    padding-left: 30rem;
 }
 .bxl-spring-boot{
 font-size: 5rem;
@@ -348,7 +349,28 @@ transition: 1s;
     100%{transform: translateY(10px);}
     /* 100%{transform: translatex(80px);} */
 }
+@media (max-width:1030px) {
+    .type{
+        padding-left:20rem ;
+    }
+}
+@media (max-width:770px) {
+    .type{
+        padding-left:11rem ;
 
+    }
+}
+@media (max-width:680px) {
+    .type{
+        padding-left:10rem ;
+    }
+.requrid{visibility: hidden;}
+}
+@media (max-width:430px) {
+    .type{
+        padding-left:2rem ;
+    }
+}
 .custom-cursor {
     position: fixed;
     top: 0;
@@ -364,8 +386,10 @@ transition: 1s;
     border-radius: 50%; 
     opacity: 0.5; 
 }
+
 body{
     cursor: none;
 }
+
 
     

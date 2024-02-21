@@ -22,7 +22,9 @@ body::-webkit-scrollbar-thumb{
 #menu{
     visibility: hidden;
 }
-.bx{cursor: pointer;}
+.bx{cursor: none;}
+a{cursor: none;}
+
 .flip{
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
@@ -43,7 +45,7 @@ body::-webkit-scrollbar-thumb{
     width: 600px;
     height: 312px;
     border-radius: 2rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     perspective: 1000px;
 }
 .flip-card-inner {

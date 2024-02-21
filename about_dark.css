@@ -19,7 +19,9 @@ body::-webkit-scrollbar-thumb{
     border-radius: 1rem;
     background-color: #c9c7c7;
 }
-.bx{cursor: pointer;}
+.bx{cursor: none;}
+a{cursor: none;}
+
 .flip{
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
@@ -293,7 +295,6 @@ button:hover{
 .cursor-icon {
     width: 32px; 
     height: 32px; 
-    background-color: #000; 
     border-radius: 50%; 
     opacity: 0.5; 
 }

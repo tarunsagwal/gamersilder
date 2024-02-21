@@ -111,18 +111,21 @@ let submit=()=>{
     }
 }
 
-let a = 0;
+var content = document.querySelector('.lines');
+var currentIndex = 0;
 let flag=0;
 function controller(x){
     flag= flag + x;
     slideshow(flag);
-    // liner()
+    currentIndex = (currentIndex - 1 + 3) % 3;
+    var newPosition = -currentIndex * 100; // Assuming each slide is 300px wide
+    content.style.transform = 'translateX(' + newPosition + 'px)';
 }
 // liner()
 
 slideshow(flag);
 function slideshow(num){
-    let line=document.querySelector(".lines")
+    // let line=document.querySelector(".lines")
     let slides = document.querySelectorAll(".game_container")
     if(num == slides.length){
         flag=0;
@@ -142,8 +145,8 @@ function slideshow(num){
         y.style.display="none"
     }
     slides[num].style.display="block";
-    a++;
-    line.style.transform = `translateX(${a*33.3}%)`;
+    // a++;
+    // line.style.transform = `translateX(${a*33.3}%)`;
 
 }
 
@@ -155,3 +158,16 @@ document.addEventListener("mousemove", function(event) {
     cursor.style.top = (event.clientY - cursorIcon.offsetHeight / 2) + "px";
 });
  
+
+
+// function controller() {
+//     currentIndex = (currentIndex - 1 + 3) % 3;
+//     var newPosition = -currentIndex * 100; // Assuming each slide is 300px wide
+//     content.style.transform = 'translateX(' + newPosition + 'px)';
+// }
+
+// function controller() {
+//     currentIndex = (currentIndex + 1) % 3;
+//     var newPosition = -currentIndex * 100; // Assuming each slide is 300px wide
+//     content.style.transform = 'translateX(' + newPosition + 'px)';
+// }

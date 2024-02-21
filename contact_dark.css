@@ -24,7 +24,9 @@ iframe{padding-top: 3rem;}
 .partner{
     background-color: #d0cfcf;
 }
-.bx{cursor: pointer;}
+.bx{cursor: none;}
+a{cursor: none;}
+
 #profile{display: none;}
 .head{
     display: flex;
@@ -94,7 +96,7 @@ font-size: 1.5rem;
 }
 .page_project{
     width: 100%;
-    height: 100dvh;
+    height: 60vh;
     background-color: #e0dede;
 }
 .project{
@@ -174,7 +176,7 @@ span{font-weight:50;}
 }
 .partner_section{
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 5rem;
     justify-content: space-around;
     background-color: #d0cfcf;
@@ -272,32 +274,15 @@ button{cursor: pointer;
     width: 100%;
     height: 100%;
   }
-  /* #cursor-icon {
-    position: absolute;
-    z-index: 9999;
-    pointer-events: none;
-    display: none;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-  }
-  .cricle{
-    background-color: #ffffff84;
-    transform: translate(50%,50%);
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    /* transition: transform 0.5s; 
-  } */
+  
 
   .custom-cursor {
     position: fixed;
     top: 0;
     left: 0;
-    pointer-events: none; /* Allow clicks to pass through the cursor */
-    z-index: 9999; /* Ensure cursor is above other elements */
+    pointer-events: none;
+    z-index: 9999;
 }
-
 .cursor-icon {
     width: 32px; /* Adjust the size as needed */
     height: 32px; /* Adjust the size as needed */
