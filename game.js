@@ -95,12 +95,12 @@ function controller(x){
     // currentIndex = (currentIndex +2) % 3;
     console.log((currentIndex +2)%2);
     var newPosition = currentIndex * 25; // Assuming each slide is 300px wide
-    content.style.transform = `translateX(-${(flag)*50}%)`;
+    // content.style.transform = `translateX(-${(flag)*50}%)`;
     if(content.style.transform != "-100%"){
         console.log('a')
         console.log(content.style.transform)
-        content.style.transform = "-75%";
-        content.style.transform = `translateX(-${(flag)*40}%)`;
+        content.style.transform = "-50%";
+        content.style.transform = `translateX(${(flag)*60}%)`;
     }else{
         console.log('b')
     }
