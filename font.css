@@ -246,7 +246,7 @@ font-weight: lighter;
     align-items: center;
     font-size: 3rem;
     justify-content: space-evenly;
-    padding: 5rem 3rem 0rem 0rem;
+    padding: 8rem 3rem 0rem 0rem;
 }
 .requrid{
     display: flex;
@@ -283,9 +283,11 @@ font-weight: lighter;
 #menu{ visibility: hidden;}
 .bx-left-arrow-alt:hover{background-color: #ebe7e77b;}
 .bx-right-arrow-alt:nth-of-type(2):hover{background-color: #ebe7e77b;}
-@media (max-width:770px) {
+@media (max-width:860px) {
     nav{display: none;}
     #menu{ visibility: visible; }
+}
+@media (max-width:770px) {
     .game_detale{
         padding: 2rem 0rem 0rem 0rem;
         font-size: 2rem;
@@ -293,17 +295,40 @@ font-weight: lighter;
         flex-direction: column;
         align-items: center;
     }
-    p{ width: 70%; }
-    .arrow{ padding: 1rem 0rem 0rem 0rem; }
-}
-@media (max-width:560px) {
     .requrid{ display: none; }
+    p{ width: 70%; }
     .arrow{
-        gap: 13rem;
-        font-size: 1.5rem;
+        gap: 22rem;
+        font-size: 2.5rem;
+        padding: 0%;
     }
 }
-@media (max-width:375px) {.take_name{display: none;}}
+@media (max-width:490px) {
+    .game_detale{
+        padding: 0rem;
+        font-size: 2rem;
+        
+    }
+    p{
+        width: 100%;
+    }
+    .game{
+        font-size: 3rem;
+    }
+    .bx-left-arrow-alt, .bx-right-arrow-alt:nth-of-type(2){
+        background: none;
+        padding: 0%;
+    }
+    .arrow{
+        font-size: 2rem;
+    }
+}
+@media (max-width:375px) {
+    .take_name{display: none;}
+.suko{
+    font-size: 1rem;
+}
+}
 .loader{
     width: 100%;
     height: 110vh;
@@ -316,6 +341,7 @@ font-weight: lighter;
     top: -355px;
     flex-direction: column-reverse;
 }
+
 .type{
     color: aqua;
     padding-top: -10rem;
@@ -329,10 +355,7 @@ transition: 1s;
 }
 @keyframes spring {
     0%{transform: translateY(0px);}
-   /* 25%{transform: scale(.8);} */
-    /* 50%{transform: translateX(-40px);} */
     100%{transform: translateY(10px);}
-    /* 100%{transform: translatex(80px);} */
 }
 @media (max-width:1030px) {
     .type{
@@ -349,11 +372,17 @@ transition: 1s;
     .type{
         padding-left:10rem ;
     }
-.requrid{visibility: hidden;}
 }
 @media (max-width:430px) {
     .type{
         padding-left:2rem ;
+    }
+}
+@media (max-width:450px) {
+    .arrow {
+        padding: 0;
+        gap: 15rem;
+        font-size: 1.8rem;
     }
 }
 .custom-cursor {
