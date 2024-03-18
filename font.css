@@ -309,6 +309,9 @@ font-weight: lighter;
         font-size: 2rem;
         
     }
+    .custom-cursor,.cursor-icon{
+        display:none;
+    }
     p{
         width: 100%;
     }
